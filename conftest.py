@@ -15,6 +15,7 @@ def setup(request):
     driver.implicitly_wait(3)
     request.cls.driver = driver
     yield
-    driver.close()
+    print("All test passed")
+    # driver.close()
 
 
